@@ -15,9 +15,9 @@ function calc(){
     let adultosNB = adultos - adultosBB
     let criancas = inputCrian.value;
 
-    let carnes = carnePP(h23) * adultos + (carnePP(h23) / 2 * criancas)
-    let cerveja = cervejaPP(h23) * adultosBB
-    let refrigerante = refrigerantePP(h23) * adultosNB + (refrigerantePP(h23) / 2 * criancas)
+    let carnes = carnePP() * adultos + (carnePP() / 2 * criancas)
+    let cerveja = cervejaPP() * adultosBB
+    let refrigerante = refrigerantePP() * adultosNB + (refrigerantePP() / 2 * criancas)
 
     res.innerHTML = `<p><b>Você irá precisar de: <ol> </b></p>`
     res.innerHTML += `<li> ${carnes / 1000} KG de carne</li>`
@@ -28,7 +28,7 @@ function calc(){
 }
 
 
-function carnePP(h23) {
+function carnePP() {
     if(h23.checked){
         return 400;
     }
@@ -37,7 +37,7 @@ function carnePP(h23) {
     }
 }
 
-function cervejaPP(h23){
+function cervejaPP(){
     if(h23.checked){
         return 1200;
     }
@@ -46,7 +46,7 @@ function cervejaPP(h23){
     }
 }
 
-function refrigerantePP(h23){
+function refrigerantePP(){
     if(h23.checked){
         return 1000;
     }
