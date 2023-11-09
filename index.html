@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Sora:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Churrascômetro</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Churrascômetro</h1>
+
+        <div>
+            <input type="number" id="adultos" placeholder="Adultos">
+            <input type="number" id="adultosbb" placeholder="Quantos bebem Cerveja?">
+            <input type="number" id="criancas" placeholder="Crianças">
+            
+            <div class="duracao">
+                Duração?
+                <ul>
+                    <ul>
+                        <input type="radio" id="2/3" name="opc" value="opc1" checked>2/3 Horas
+                    </ul>   
+                    <ul>
+                        <input type="radio" id="5/6" name="opc" value="opc2">5/6 Horas
+                    </ul>
+                </ul>
+            </div>
+            <input type="button" value="calcular" onclick="calc()">
+        </div>
+
+        <div id="result">
+
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
